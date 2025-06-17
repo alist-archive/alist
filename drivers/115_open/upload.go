@@ -6,12 +6,12 @@ import (
 	"io"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	sdk "codeberg.org/alist/115-sdk-go"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/avast/retry-go"
-	sdk "github.com/xhofe/115-sdk-go"
 )
 
 func calPartSize(fileSize int64) int64 {

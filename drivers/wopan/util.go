@@ -3,7 +3,7 @@ package template
 import (
 	"time"
 
-	"github.com/xhofe/wopan-sdk-go"
+	"codeberg.org/alist/wopan-sdk-go"
 )
 
 // do others that not defined in Driver interface

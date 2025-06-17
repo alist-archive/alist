@@ -4,9 +4,9 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 // 高级设置

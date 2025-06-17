@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/stream"
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/stream"
+	"codeberg.org/alist/alist/v3/pkg/http_range"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
 	"github.com/minio/sio"
 )

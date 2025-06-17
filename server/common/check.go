@@ -4,11 +4,11 @@ import (
 	"path"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"github.com/dlclark/regexp2"
 )
 

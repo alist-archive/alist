@@ -1,6 +1,6 @@
 appName="alist"
 builtAt="$(date +'%F %T %z')"
-gitAuthor="Xhofe <i@nn.ci>"
+gitAuthor="Alist Archive <alist-archive@example.com>"
 gitCommit=$(git log --pretty=format:"%h" -1)
 
 if [ "$1" = "dev" ]; then
@@ -20,11 +20,11 @@ echo "frontend version: $webVersion"
 
 ldflags="\
 -w -s \
--X 'github.com/alist-org/alist/v3/internal/conf.BuiltAt=$builtAt' \
--X 'github.com/alist-org/alist/v3/internal/conf.GitAuthor=$gitAuthor' \
--X 'github.com/alist-org/alist/v3/internal/conf.GitCommit=$gitCommit' \
--X 'github.com/alist-org/alist/v3/internal/conf.Version=$version' \
--X 'github.com/alist-org/alist/v3/internal/conf.WebVersion=$webVersion' \
+-X 'codeberg.org/alist/alist/v3/internal/conf.BuiltAt=$builtAt' \
+-X 'codeberg.org/alist/alist/v3/internal/conf.GitAuthor=$gitAuthor' \
+-X 'codeberg.org/alist/alist/v3/internal/conf.GitCommit=$gitCommit' \
+-X 'codeberg.org/alist/alist/v3/internal/conf.Version=$version' \
+-X 'codeberg.org/alist/alist/v3/internal/conf.WebVersion=$webVersion' \
 "
 
 FetchWebDev() {

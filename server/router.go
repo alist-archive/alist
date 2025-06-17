@@ -1,16 +1,16 @@
 package server
 
 import (
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/message"
-	"github.com/alist-org/alist/v3/internal/sign"
-	"github.com/alist-org/alist/v3/internal/stream"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/common"
-	"github.com/alist-org/alist/v3/server/handles"
-	"github.com/alist-org/alist/v3/server/middlewares"
-	"github.com/alist-org/alist/v3/server/static"
+	"codeberg.org/alist/alist/v3/cmd/flags"
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/message"
+	"codeberg.org/alist/alist/v3/internal/sign"
+	"codeberg.org/alist/alist/v3/internal/stream"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/server/common"
+	"codeberg.org/alist/alist/v3/server/handles"
+	"codeberg.org/alist/alist/v3/server/middlewares"
+	"codeberg.org/alist/alist/v3/server/static"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )

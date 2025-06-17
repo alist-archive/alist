@@ -1,9 +1,10 @@
 package tool
 
 import (
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/stream"
 	"io"
+
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/stream"
 )
 
 type MultipartExtension struct {

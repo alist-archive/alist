@@ -6,13 +6,14 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"errors"
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/go-resty/resty/v2"
 	"net/http"
 	"strconv"
 	"time"
+
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"github.com/go-resty/resty/v2"
 )
 
 const (

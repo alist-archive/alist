@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
 )
 
@@ -300,12 +300,12 @@ func BuildCustomUserAgent(deviceID, appName, sdkVersion, clientVersion, packageN
 	sb.WriteString(fmt.Sprintf("ANDROID-%s/%s ", appName, clientVersion))
 	sb.WriteString("networkType/WIFI ")
 	sb.WriteString(fmt.Sprintf("appid/%s ", "22062"))
-	sb.WriteString(fmt.Sprintf("deviceName/Xiaomi_M2004j7ac "))
-	sb.WriteString(fmt.Sprintf("deviceModel/M2004J7AC "))
-	sb.WriteString(fmt.Sprintf("OSVersion/13 "))
-	sb.WriteString(fmt.Sprintf("protocolVersion/301 "))
-	sb.WriteString(fmt.Sprintf("platformversion/10 "))
+	sb.WriteString("deviceName/Xiaomi_M2004j7ac ")
+	sb.WriteString("deviceModel/M2004J7AC ")
+	sb.WriteString("OSVersion/13 ")
+	sb.WriteString("protocolVersion/301 ")
+	sb.WriteString("platformversion/10 ")
 	sb.WriteString(fmt.Sprintf("sdkVersion/%s ", sdkVersion))
-	sb.WriteString(fmt.Sprintf("Oauth2Client/0.9 (Linux 4_9_337-perf-sn-uotan-gd9d488809c3d) (JAVA 0) "))
+	sb.WriteString("Oauth2Client/0.9 (Linux 4_9_337-perf-sn-uotan-gd9d488809c3d) (JAVA 0) ")
 	return sb.String()
 }

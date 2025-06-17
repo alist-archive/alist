@@ -1,9 +1,9 @@
 package v3_24_0
 
 import (
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/db"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 // HashPwdForOldVersion encode passwords using SHA256

@@ -6,11 +6,12 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"fmt"
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"golang.org/x/crypto/ssh"
 	"os"
 	"path/filepath"
+
+	"codeberg.org/alist/alist/v3/cmd/flags"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"golang.org/x/crypto/ssh"
 )
 
 var SSHSigners []ssh.Signer

@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	sdk "github.com/xhofe/115-sdk-go"
+	sdk "codeberg.org/alist/115-sdk-go"
+	"codeberg.org/alist/alist/v3/cmd/flags"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"golang.org/x/time/rate"
 )
 

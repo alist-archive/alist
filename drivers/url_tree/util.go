@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/model"
 	log "github.com/sirupsen/logrus"
 )
 

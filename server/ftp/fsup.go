@@ -3,20 +3,21 @@ package ftp
 import (
 	"bytes"
 	"context"
-	ftpserver "github.com/KirCute/ftpserverlib-pasvportmap"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/stream"
-	"github.com/alist-org/alist/v3/server/common"
-	"github.com/pkg/errors"
 	"io"
 	"net/http"
 	"os"
 	stdpath "path"
 	"time"
+
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/fs"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/internal/stream"
+	"codeberg.org/alist/alist/v3/server/common"
+	ftpserver "github.com/KirCute/ftpserverlib-pasvportmap"
+	"github.com/pkg/errors"
 )
 
 type FileUploadProxy struct {

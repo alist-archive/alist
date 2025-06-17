@@ -3,7 +3,7 @@ package odrvcookie
 import (
 	"net/http"
 
-	"github.com/alist-org/alist/v3/pkg/cookie"
+	"codeberg.org/alist/alist/v3/pkg/cookie"
 )
 
 //type SpCookie struct {

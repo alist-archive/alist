@@ -1,8 +1,8 @@
 package quark_uc_tv
 
 import (
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/op"
 )
 
 type Addition struct {
@@ -41,7 +41,7 @@ func init() {
 				signKey:  "kw2dvtd7p4t3pjl2d9ed9yc8yej8kw2d",
 				appVer:   "1.5.6",
 				channel:  "CP",
-				codeApi:  "http://api.extscreen.com/quarkdrive",
+				codeApi:  "https://api.extscreen.com/quarkdrive",
 			},
 		}
 	})
@@ -60,7 +60,7 @@ func init() {
 				signKey:  "l3srvtd7p42l0d0x1u8d7yc8ye9kki4d",
 				appVer:   "1.6.5",
 				channel:  "UCTVOFFICIALWEB",
-				codeApi:  "http://api.extscreen.com/ucdrive",
+				codeApi:  "https://api.extscreen.com/ucdrive",
 			},
 		}
 	})

@@ -2,18 +2,19 @@ package server
 
 import (
 	"context"
-	"github.com/KirCute/sftpd-alist"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/server/ftp"
-	"github.com/alist-org/alist/v3/server/sftp"
-	"github.com/pkg/errors"
-	"golang.org/x/crypto/ssh"
 	"net/http"
 	"time"
+
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/internal/setting"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/server/ftp"
+	"codeberg.org/alist/alist/v3/server/sftp"
+	"github.com/KirCute/sftpd-alist"
+	"github.com/pkg/errors"
+	"golang.org/x/crypto/ssh"
 )
 
 type SftpDriver struct {

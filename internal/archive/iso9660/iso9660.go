@@ -1,14 +1,15 @@
 package iso9660
 
 import (
-	"github.com/alist-org/alist/v3/internal/archive/tool"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/stream"
-	"github.com/kdomanski/iso9660"
 	"io"
 	"os"
 	stdpath "path"
+
+	"codeberg.org/alist/alist/v3/internal/archive/tool"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/stream"
+	"github.com/kdomanski/iso9660"
 )
 
 type ISO9660 struct {

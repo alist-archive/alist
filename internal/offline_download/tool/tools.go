@@ -2,8 +2,9 @@ package tool
 
 import (
 	"fmt"
-	"github.com/alist-org/alist/v3/internal/model"
 	"sort"
+
+	"codeberg.org/alist/alist/v3/internal/model"
 )
 
 var (

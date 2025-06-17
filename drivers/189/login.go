@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

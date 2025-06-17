@@ -2,12 +2,13 @@ package stream
 
 import (
 	"context"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/http_range"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"golang.org/x/time/rate"
 	"io"
 	"time"
+
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/pkg/http_range"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"golang.org/x/time/rate"
 )
 
 type Limiter interface {

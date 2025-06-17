@@ -4,9 +4,9 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 // ExpertAddition 高级设置
@@ -35,8 +35,8 @@ type ExpertAddition struct {
 
 	// 必要且影响登录,由签名决定
 	DeviceID      string `json:"device_id"  required:"false" default:""`
-	ClientID      string `json:"client_id"  required:"true" default:"ZUBzD9J_XPXfn7f7"`
-	ClientSecret  string `json:"client_secret"  required:"true" default:"yESVmHecEe6F0aou69vl-g"`
+	ClientID      string `json:"client_id"  required:"true" help:"Thunder Browser API Client ID. This is required for Expert mode."`
+	ClientSecret  string `json:"client_secret"  required:"true" help:"Thunder Browser API Client Secret. This is required for Expert mode."`
 	ClientVersion string `json:"client_version"  required:"true" default:"1.10.0.2633"`
 	PackageName   string `json:"package_name"  required:"true" default:"com.xunlei.browser"`
 

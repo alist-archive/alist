@@ -1,15 +1,15 @@
 package handles
 
 import (
-	_115 "github.com/alist-org/alist/v3/drivers/115"
-	"github.com/alist-org/alist/v3/drivers/pikpak"
-	"github.com/alist-org/alist/v3/drivers/thunder"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/offline_download/tool"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/task"
-	"github.com/alist-org/alist/v3/server/common"
+	_115 "codeberg.org/alist/alist/v3/drivers/115"
+	"codeberg.org/alist/alist/v3/drivers/pikpak"
+	"codeberg.org/alist/alist/v3/drivers/thunder"
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/offline_download/tool"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/internal/task"
+	"codeberg.org/alist/alist/v3/server/common"
 	"github.com/gin-gonic/gin"
 )
 

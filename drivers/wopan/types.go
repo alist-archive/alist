@@ -1,8 +1,8 @@
 package template
 
 import (
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/xhofe/wopan-sdk-go"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/wopan-sdk-go"
 )
 
 type Object struct {

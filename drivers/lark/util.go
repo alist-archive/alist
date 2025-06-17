@@ -2,11 +2,12 @@ package lark
 
 import (
 	"context"
-	"github.com/Xhofe/go-cache"
-	larkdrive "github.com/larksuite/oapi-sdk-go/v3/service/drive/v1"
-	log "github.com/sirupsen/logrus"
 	"path"
 	"time"
+
+	"codeberg.org/alist/go-cache"
+	larkdrive "github.com/larksuite/oapi-sdk-go/v3/service/drive/v1"
+	log "github.com/sirupsen/logrus"
 )
 
 const objTokenCacheDuration = 5 * time.Minute

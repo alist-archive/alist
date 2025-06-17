@@ -1,12 +1,13 @@
 package op
 
 import (
-	"github.com/alist-org/alist/v3/internal/errs"
 	stdpath "path"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/errs"
+
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	log "github.com/sirupsen/logrus"
 )
 

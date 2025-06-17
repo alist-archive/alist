@@ -9,11 +9,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 func (d *NeteaseMusic) request(url, method string, opt ReqOption) ([]byte, error) {
@@ -212,7 +212,7 @@ func (d *NeteaseMusic) getLyricObj(file model.Obj) (model.Obj, error) {
 }
 
 func (d *NeteaseMusic) removeSongObj(file model.Obj) error {
-	_, err := d.request("http://music.163.com/weapi/cloud/del", http.MethodPost, ReqOption{
+	_, err := d.request("https://music.163.com/weapi/cloud/del", http.MethodPost, ReqOption{
 		crypto: "weapi",
 		data: map[string]string{
 			"songIds": "[" + file.GetID() + "]",

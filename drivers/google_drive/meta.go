@@ -1,8 +1,8 @@
 package google_drive
 
 import (
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/internal/driver"
+	"codeberg.org/alist/alist/v3/internal/op"
 )
 
 type Addition struct {
@@ -10,8 +10,8 @@ type Addition struct {
 	RefreshToken   string `json:"refresh_token" required:"true"`
 	OrderBy        string `json:"order_by" type:"string" help:"such as: folder,name,modifiedTime"`
 	OrderDirection string `json:"order_direction" type:"select" options:"asc,desc"`
-	ClientID       string `json:"client_id" required:"true" default:"202264815644.apps.googleusercontent.com"`
-	ClientSecret   string `json:"client_secret" required:"true" default:"X4Z3ca8xfWDb1Voo-F9a7ZxJ"`
+	ClientID       string `json:"client_id" required:"true" help:"Your Google API Client ID. This is required."`
+	ClientSecret   string `json:"client_secret" required:"true" help:"Your Google API Client Secret. This is required."`
 	ChunkSize      int64  `json:"chunk_size" type:"number" default:"5" help:"chunk size while uploading (unit: MB)"`
 }
 

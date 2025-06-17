@@ -3,10 +3,11 @@ package bootstrap
 import (
 	"fmt"
 
-	"github.com/alist-org/alist/v3/internal/bootstrap/patch"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"strings"
+
+	"codeberg.org/alist/alist/v3/internal/bootstrap/patch"
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 var LastLaunchedVersion = ""

@@ -3,9 +3,9 @@ package db
 import (
 	"context"
 
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/search/searcher"
+	"codeberg.org/alist/alist/v3/internal/db"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/search/searcher"
 )
 
 type DB struct{}

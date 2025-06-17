@@ -2,11 +2,12 @@ package task
 
 import (
 	"context"
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/xhofe/tache"
 	"sync"
 	"time"
+
+	"codeberg.org/alist/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/tache"
 )
 
 type TaskExtension struct {

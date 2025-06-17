@@ -1,7 +1,7 @@
 package tool
 
 import (
-	"github.com/alist-org/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/errs"
 )
 
 var (

@@ -7,7 +7,7 @@ import (
 	"hash"
 	"strconv"
 
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 )
 
 var GCID = utils.RegisterHashWithParam("gcid", "GCID", 40, func(a ...any) hash.Hash {

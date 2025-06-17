@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/drivers/base"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/internal/op"
+	"codeberg.org/alist/alist/v3/pkg/utils"
 	"github.com/go-resty/resty/v2"
 	log "github.com/sirupsen/logrus"
 )
@@ -20,10 +20,10 @@ import (
 // do others that not defined in Driver interface
 
 func (d *AliyundriveOpen) _refreshToken() (string, string, error) {
-	url := API_URL + "/oauth/access_token"
-	if d.OauthTokenURL != "" && d.ClientID == "" {
-		url = d.OauthTokenURL
+	if d.ClientID == "" || d.ClientSecret == "" {
+		return "", "", errors.New("client_id and client_secret are required for Aliyundrive Open")
 	}
+	url := API_URL + "/oauth/access_token"
 	//var resp base.TokenResp
 	var e ErrResp
 	res, err := base.RestyClient.R().

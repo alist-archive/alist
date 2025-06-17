@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/errs"
 
-	"github.com/alist-org/alist/v3/internal/conf"
+	"codeberg.org/alist/alist/v3/internal/conf"
 	log "github.com/sirupsen/logrus"
 )
 

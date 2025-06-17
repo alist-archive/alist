@@ -3,12 +3,12 @@ package op
 import (
 	"time"
 
-	"github.com/Xhofe/go-cache"
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/singleflight"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"codeberg.org/alist/alist/v3/internal/db"
+	"codeberg.org/alist/alist/v3/internal/errs"
+	"codeberg.org/alist/alist/v3/internal/model"
+	"codeberg.org/alist/alist/v3/pkg/singleflight"
+	"codeberg.org/alist/alist/v3/pkg/utils"
+	"codeberg.org/alist/go-cache"
 )
 
 var userCache = cache.NewMemCache(cache.WithShards[*model.User](2))
